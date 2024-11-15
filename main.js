@@ -23,7 +23,7 @@ const fetchData = async (query) => {
   const options = {
     method: "GET",
     headers: {
-      "x-rapidapi-key": import.meta.env.VITE_RAPID_KEY,
+      "x-rapidapi-key": process.env.VITE_RAPID_KEY,
       "x-rapidapi-host": "epic-games-store.p.rapidapi.com",
     },
   };
