@@ -4,10 +4,6 @@
 
 import "./css/bootstrap.min.css";
 import "./js/bootstrap.bundle.min";
-import { config } from 'dotenv';
-
-// Load environment variables from .env file
-config();
 
 const container = document.querySelector(".dynamic_data");
 const spinner = document.querySelector(".spinner-container");
@@ -27,7 +23,7 @@ const fetchData = async (query) => {
   const options = {
     method: "GET",
     headers: {
-      "x-rapidapi-key": process.env.VITE_RAPID_KEY,
+      "x-rapidapi-key": import.meta.env.VITE_RAPID_KEY,
       "x-rapidapi-host": "epic-games-store.p.rapidapi.com",
     },
   };
