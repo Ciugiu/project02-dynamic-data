@@ -57,7 +57,7 @@ const fetchData = async (query) => {
               <article class="card">
                 <div class="card-body">
                 <p>${item.title}</p>
-                  <p>${item.seller.name}</p>
+                  <p>${item.seller.description}</p>
                   <p>${price}</p>
                 </div>
               </article>
