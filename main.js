@@ -4,6 +4,10 @@
 
 import "./css/bootstrap.min.css";
 import "./js/bootstrap.bundle.min";
+import { config } from 'dotenv';
+
+// Load environment variables from .env file
+config();
 
 const container = document.querySelector(".dynamic_data");
 const spinner = document.querySelector(".spinner-container");
